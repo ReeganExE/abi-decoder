@@ -1,6 +1,6 @@
 {
-  "name": "abi-decoder",
-  "version": "2.3.0",
+  "name": "@reeganexe/abi-decoder",
+  "version": "2.3.3",
   "description": "Nodejs and Javascript library for decoding data params and events from ethereum transactions\"",
   "main": "index.js",
   "scripts": {
@@ -8,6 +8,11 @@
     "test": "mocha test",
     "dist": "webpack"
   },
+  "files": [
+    "index.js",
+    "types.d.ts"
+  ],
+  "types": "types.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ConsenSys/abi-decoder.git"
@@ -42,5 +47,8 @@
     "mocha": "^5.2.0",
     "webpack": "^4.29.1",
     "webpack-cli": "^3.2.3"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
